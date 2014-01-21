@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+    <name>IxUpcomingEvents</name>
+    <author>Imixtix</author>
+    <authorUrl>http://imixtix.com/</authorUrl>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>1.0.0</version>
+    <description>A module IXupcomingEvents of Imixtix display upcoming events.</description>
+    <files>
+        <filename>mod_ixupcomingevents.xml</filename>
+        <filename module="mod_ixupcomingevents">mod_ixupcomingevents.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/images.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+   
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="imixtix_events" type="text" default="1" label="No. Events to Display " filter="integer"/>
+                <field name="imixtixmodulelayout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field name="imixtix_image_width" type="text" default="150" label="Events Image Width " filter="integer"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
